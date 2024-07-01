@@ -21,20 +21,22 @@ class Solution:
             fast = fast.next.next # grow fast with 2 steps
         #print(slow.val)
 
-        prev, curr, next= None, slow.next, None
+        prev, curr= None, slow.next
         while curr:
-            
-            next = curr.next
+            temp = curr.next
             curr.next = prev
             prev = curr
-            curr = next
+            curr = temp
         
         first = head
         second=prev
         next_1, next_2 = None, None
 
-        while first and second.next:
+        while first:
             next_1 = first.next
+            if not second:   
+                first.next = None
+                break
             next_2 = second.next
             first.next = second
             second.next = next_1
@@ -53,7 +55,7 @@ class Solution:
 
 
 
-myList = ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5, ListNode(6, ListNode(7)))))))
+myList = ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5, ListNode(6, ListNode(7,ListNode(8))))))))
 
 Solution.reorderList(Solution, myList)
 while myList:
