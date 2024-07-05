@@ -15,13 +15,5 @@ class Solution:
                 p2 +=1
                 p1 +=1
                 res +=1
-        return res
-    
-
-
-    
-
-
-
-    
+        return res   
             
