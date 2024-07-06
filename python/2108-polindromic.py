@@ -6,3 +6,7 @@ class Solution:
         return ""
     def is_polindrome(self, word:str):
         return word == ''.join(reversed(word))
+    
+
+
+    
