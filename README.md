@@ -36,6 +36,8 @@
 [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/JalilTahirov/leetcode/blob/main/python/1984-minimum-difference-between-highest-and-lowest-of-k-scores.py)
 
 
+[0680-valid polindrome](https://github.com/JalilTahirov/leetcode/blob/main/python/0680-valid-palindrome-ii.py)
+
 
 
 
